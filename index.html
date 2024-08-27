@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Эмулятор галетного переключателя (аттенюатора) ПП10-4РБВ</title>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">	
+</head>
+
+<body>
+
+    <div class="section">
+        <div class="notification has-text-centered">
+            <p class="title">Эмулятор логического галетного переключателя (аттенюатора)</p>
+        </div>
+    </div>
+
+	
+	<div class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-6 is-offset-3">
+					
+					
+					<div class="field is-horizontal">
+					<div class="field-label is-normal">
+					<label class="label">Разрядность</label>
+				</div>
+				<div class="field-body">
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<div class="select">
+								<select id="discret">	
+									<option value="2">2 бита</option>								
+									<option value="4">4 бита</option>																
+									<option value="6">6 бит</option>						
+									<option value="8">8 бит</option>
+								</select>
+							</div>
+						</p>
+					</div>
+				</div>			
+				<div class="field-body">
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<div class="select">
+								<select class="selector" data-for="0">									
+								</select>
+							</div>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<div class="select">
+								<select class="selector" data-for="1">									
+								</select>
+							</div>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<div class="select">
+								<select class="selector" data-for="2">									
+								</select>
+							</div>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<div class="select">
+								<select class="selector" data-for="3">									
+								</select>
+							</div>
+						</p>
+					</div>
+				</div>
+			</div>	
+					<hr/>
+					
+					<table class="table is-fullwidth">
+						<tbody id="indicators">					
+						</tbody>	
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script async type="text/javascript" src="init.js"></script>
+</body>
+
+</html>

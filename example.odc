@@ -1,0 +1,8 @@
+MODULE M; (*sets*)
+		PROCEDURE* P(m, n: INTEGER);
+			VAR s0, s1, s2: SET;
+		BEGIN s0 := {m}; s0 := {0 .. n}; s0 := {m .. n}; s0 := {m+n .. m-n};
+			IF n IN s0 THEN s0 := {0} END ;
+			IF s1 <= s2 THEN s0 := {4} END
+		END P;
+	END M.
